@@ -1,0 +1,59 @@
+
+.title {
+  text-align: center;
+  font-size: ms(2);
+  font-family: $title-font;
+  margin: 0;
+}
+
+.year {
+  font-size: ms(1);
+  text-align: center;
+  font-family: $title-font;
+  margin: 0;
+}
+
+.note {
+  text-align: center;
+  font-size: ms(0);
+  font-family: $roboto;
+  margin: 0.25em 0 0 0;
+}
+
+.creator {
+  position: absolute;
+  top: 3em;
+  left: 5em;
+  color: $link;
+  font-size: ms(0);
+
+  &:hover {
+    transition: color 800ms;
+    text-decoration: none;
+    color: $forth-color;
+  }
+
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+  }
+
+  &:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+}

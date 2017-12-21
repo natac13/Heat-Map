@@ -1,0 +1,98 @@
+.svg {
+  overflow: visible !important;
+}
+
+.chart {
+  position: relative;
+}
+
+.x-axis, .y-axis {
+  font: 12px Arial sans-serif;
+  stroke: #333;
+
+  line, path, text {
+    stroke: #333;
+  }
+
+  text {
+    fill: #333;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+  }
+}
+
+.x-legend, .y-legend{
+  font-size: 1.3em;
+  font-weight: 800;
+  fill: #333;
+  letter-spacing: 5px
+}
+
+.tooltip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 3px 5px 3px 5px;
+  font: 1em sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: $forth-color;
+  color: $offWhite;
+}
+
+.fiat {
+  font-weight: 800;
+}
+
+.heats {
+  transition: 200ms all;
+  transform-origin: 50% 50%;
+
+  &:hover {
+    transform: scale(1.3);
+    fill: $contrast;
+  }
+}
+
+.svg-wrapper {
+  margin-top: .5em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 13px 1px #000;
+  border-radius: 3px;
+}
+
+.selecting {
+  position: absolute;
+  top: 5em;
+  left: 30em;
+  height: 3em;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius;
+
+  &:hover, &:focus, &:active {
+    border-radius: 1em;
+  }
+}
+
+.legend {
+
+}
+
+.legend-blocks {
+
+}
+
+
