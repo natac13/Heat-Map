@@ -1,6 +1,6 @@
 {
   "name": "heatmap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Heat Map visualization challenge for Free Code Camp",
   "main": "build/index.js",
   "scripts": {
